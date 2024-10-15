@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Strings</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <div id="content"></div>
+    
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas maiores eius incidunt suscipit eveniet qui sit
+            doloremque praesentium assumenda placeat eum aspernatur libero nisi numquam nostrum aperiam deserunt rerum,
+            similique aut iste ipsam dolore?</p>
+    </div>
+
+
+
+
+
+    <script>
+
+        // STRINGS In JS
+        var string = 'this';
+        var name  = 'Hassan';
+        var channel = 'CodeWithHassan';
+        var message = 'Hassan is a good Artist';
+        var temp = `${name} is a nice person and has a channel called ${channel}`; 
+        console.log(temp);
+        var len = name.length;
+        console.log(`Length of name is ${len}`)
+
+        // Escape Sequences 
+        console.log("\\Hello \t World \n Hassan \b and") 
+
+
+        document.getElementById('content').innerHTML = '<h3> this is a h3 heading </h3>'
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Dates</title>
+    <style>
+        .container {
+            font-size: 20px;
+            padding: 20px 14px;
+            border: 3px solid rgb(4, 95, 65);
+            background-color: rgb(95, 207, 128);
+            margin: 4px;
+            text-align: center;
+        }
+
+        #time {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        Current GREENWICH Time is <span id="time"></span>
+    </div>
+
+
+    <script>
+        let now = new Date();
+        console.log(now);
+
+        let dat = new Date(1000);
+        console.log(dat);
+
+        let mate = new Date("2029-09-03");
+        console.log(mate);
+
+        // SYNTAX =>   let newDate = new Date("Year ,Month ,date ,hours ,minutes , Seconds , milli-Sec ");
+        let newDate = new Date(2027, 5, 28, 5, 40, 21, 13);
+        console.log(newDate);
+
+        let yr = newDate.getFullYear();
+        console.log("The year is", yr);
+
+        let dt = newDate.getDate();
+        console.log("The date is", dt);
+
+
+        let mt = newDate.getMonth();
+        console.log("The month is", mt);
+
+
+        let hr = newDate.getHours();
+        console.log("The hours is", hr);
+
+        newDate.setDate(39);
+        newDate.setSeconds(12);
+        console.log(newDate);
+        setInterval(Updatetime, 5);
+
+        function Updatetime() {
+            time.innerHTML = new Date();
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

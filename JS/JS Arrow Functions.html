@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <div class="container">
+        This is Arrow Functions Tutorail.
+    </div>
+    <script>
+      //  Arrow Functions
+         greet = ()=>{
+            console.log('Good morning')
+
+         }
+         greet= ()=> console.log('Good Night')
+
+         
+
+
+        // Return Value in Arrow Functions:
+        let sum = (a, b)=>{
+            return a+b ;
+        }
+
+        let sum2 = (a,b)=> a+b;
+        let half = a=> a/2;
+
+
+         // Arrow Functions in SetTimeout
+         greet();
+         setInterval(() => {
+            console.log('We are inside SetTimeout')
+            
+         }, 5000);
+
+
+        //  OBJECTS  |  Foreach LOOP in Arrow Functions | MOST IMP TOPIC:
+        let obj1={
+            greeting : "I Know that " ,
+             names: ["JohnWick" , "Batman" , "Superman" , "Witcher"],
+             speak(){                 //This is only in Arrow function, get call by "this" so it is called Laksical THis.
+                   this.names.forEach((Heroes)=>{     
+                    console.log( this.greeting + 'Legends are:' , Heroes); 
+                                                                              
+                   })
+             }   
+        }
+          obj1.speak();
+
+
+
+    </script>
+   
+</body>
+</html>

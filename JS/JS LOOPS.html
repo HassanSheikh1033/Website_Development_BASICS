@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOPS IN JS</title>
+</head>
+<body>
+    <h1>This is a LOOPS</h1>
+
+    <script>
+      
+    //   FOR LOOP IN JS 
+      let i = 0;
+      for(i=0;i>3;i++){
+        console.log(i);
+      }
+
+    // FOR LOOP Concept in ARRAY ;
+
+    let cars = ["Buggati", "Ferrari" ,"Ford" , "Audi" , "Lamborgani"] 
+     for (let index = 0; index < cars.length; index++) {
+            console.log("Hello MY CARS" + " => " + cars[index]);
+     }
+
+     // FOR-EACH LOOP ;
+     let abcd = ["A", "B" ,"C" , "D" , "E"] 
+      abcd.forEach(element => {
+        console.log("English Alphabets" + " => " + element);
+        
+     });
+
+
+     // FOR-OF LOOP ;
+     let bikes = ["Ninja H2R" , "Dugati" ," Highabusa"  ]
+     for(elements of bikes) {
+        console.log("SuperBIKES" + " => " + elements);
+    }
+     
+
+    // FOR-IN LOOP ;
+    let employee ={
+        name: "Hassan",
+        salary:  2,
+        channel: "CWH",
+    }
+    for(key in employee ) {
+        console.log(` The ${key} of employee is ${employee[key]} `);
+
+    }
+
+     // WHILE LOOP IN JS;
+     let j =0;
+     while(j<4){
+        console.log(`${j} is less than 4`);
+        j++;
+     }
+
+     //Do-While LOOP IN JS;
+     let k =34;
+     do{
+         
+           console.log(`${k} is less than 4 and we are inside do-while loop`);
+        k++;
+     }
+     while(j<4);
+      
+     
+
+
+    </script>
+</body>
+</html>

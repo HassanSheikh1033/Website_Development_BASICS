@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 200vh;
+    background-color: aqua;
+}
+
+#btn {
+    padding: 0.6rem 2rem;
+    margin: 2rem 0 0 2rem;
+    transition: all 400ms ease-out;
+}

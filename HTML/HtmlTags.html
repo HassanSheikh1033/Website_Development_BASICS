@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML Tags</title>
+</head>
+
+<body>
+
+    <!-- Selcet and Press Ctrl + / to comment ...  -->
+
+    <!-- Headings -->
+    <h1>Heading TAG</h1>
+    <h2>this is a heading</h2>
+    <h3>this is a heading</h3>
+    <h4>this is a heading</h4>
+    <h5>this is a heading</h5>
+    <h6>this is a heading</h6>
+
+
+
+
+    <!-- Paragraphs  -->
+    <h1>PARAGRAPH TAG </h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Placeat praesentium ipsum asperiores eos, ducimus moles
+        tiae expedita maiores voluptas eius deleniti cumque eli
+        gendi error ipsa. Quis, sapiente recusandae? Inventore,
+        explicabo mollitia?</p>
+
+
+
+
+
+
+        <!-- Anchor  -->
+
+    <h1>ANCHOR TAG</h1>
+    <a href="https://google.com" target="_blank">Go To Google</a>
+
+
+
+
+
+
+
+    <!-- Image  -->
+
+    <h1>IMAGE TAG</h1>
+    <img src="Hassan.jpg" alt="Error Loading image">
+
+
+
+
+
+
+
+    <!-- Ordered and Unordered Lists   -->
+
+    <h1>Ordered and unordered lists</h1>
+    <ul>
+        <li>This is a first item of ordered list</li>
+        <li>This is a second item of ordered list</li>
+        <li>
+            <ul>
+                <li>Another one</li>
+                <li>Another two</li>
+            </ul>
+        </li>
+        <li>This is a third item of ordered list</li>
+    </ul>
+
+    <ol type="A">
+        <li>This is a first item of unordered list</li>
+        <li>This is a second item of unordered list</li>
+        <li>This is a third item of unordered list</li>
+    </ol>
+
+
+
+
+
+
+
+
+    <!-- Span Tag -->
+    <h1>Span Tag</h1> <!-- anchor , strong and span is inline tags  -->
+    <strong style="border: 6px solid rebeccapurple;">this is paragraph</strong> <a
+        style="border: 6px solid rebeccapurple;">this is paragraph<a />
+        <span style="border: 6px solid rebeccapurple;">this is span</span> <span
+            style="border: 6px solid rebeccapurple;">this is span</span>
+
+
+
+
+
+
+
+
+
+        <!-- DIV TAG  -->
+        <h1>Div Tag</h1>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+                . Eum, placeat dolore quod reprehenderit necessitatibus
+                culpa mollitia voluptate eveniet magni velit aspernatur
+                ipsa ex eius accusantium libero nulla vitae, eos eaque!</p>
+        </div>
+
+
+
+
+
+
+
+
+
+        <!-- Id & Class Tag  -->
+        <h1>Id & Class in HMTL</h1>
+        <div id="Mainbox" class="Redbg">
+            This is a Mainbox
+        </div> <!-- Dot (.) is used for class and Pond (#) is used for Id .....  Id is unique in hmtl , we call anything by Id and Class-->
+            
+        <!-- Emmet takes div as a default --> 
+         <!-- .background  -->
+        <div class="background"></div>
+        
+        <!-- Creating multiple elements using Emmet  -->
+
+        <!-- span.myclass1.myclass2.myclass3 + <tab> -->
+        <span class="myclass1 myclass2 myclass3"></span>
+
+        <!-- span.myclass1.myclass2.myclass3*4 + <tab> to print 4 elements or more  -->
+        <span class="myclass1 myclass2 myclass3">First</span>
+        <span class="myclass1 myclass2 myclass3">Second</span>
+        <span class="myclass1 myclass2 myclass3">Third</span>
+        <span class="myclass1 myclass2 myclass3">Fourth</span>
+
+
+
+
+
+
+
+         <!-- Hmtl Entities  -->
+            <h1>HMTL Entities</h1>
+            <p>This is &nbsp; paragraph </p>
+            <p>This paragraph is written like this &lt;p&gt; </p>
+            <p>Pound is written like this &pound; </p>
+            <p>Copyright is written like this &copy;</p>
+
+
+
+
+
+
+
+
+
+        <!-- Tables  -->
+
+        <h1> HMTL TABLES</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+
+            <body>
+                <tr>
+                    <td>Hassan</td>
+                    <td>Programmer</td>
+                    <td>3234</td>
+                </tr>
+                <tr>
+                    <td>Assassin</td>
+                    <td>Hacker</td>
+                    <td>83478</td>
+                </tr>
+                <tr>
+                    <td>SyCo</td>
+                    <td>Web Developer</td>
+                    <td>432423</td>
+                </tr>
+            </body>
+        </table>
+
+
+
+
+        <!-- FORMS   -->
+
+        <h1>Forms</h1>
+        <form action="backend.php">
+            <label for="Name">Name: </label>
+            <div>
+                <input type="text" name="myName" id="Name">
+            </div>
+            <div><br></div>
+            <div>
+                Role: <input type="text" name="myRole" id="">
+            </div>
+            <div><br></div>
+            <div>
+                Email: <input type="email" name="myEmail" id="">
+            </div>
+            <div><br></div>
+            <div>
+                Date:<input type="date" name="" id="">
+            </div>
+            <div><br></div>
+            <div>
+                Bonus: <input type="number" name="mybonus" id="">
+            </div>
+            <div><br></div>
+            <div>
+                Are you eligible: <input type="checkbox" name="eligiblity" id="">
+            </div>
+            <div><br></div>
+            <div>
+                Gender: MALE <input type="radio" name="myGender" id="">
+                FEMALE <input type="radio" name="myGender" id="">
+                CUSTOM <input type="radio" name="myGender" id="">
+            </div>
+            <div><br></div>
+            <div>
+                Write about yourself <br> <textarea name="mytext" id="" cols="160" rows="10"></textarea>
+            </div>
+            <div><br></div>
+            <div>
+
+                <label for="Car">Car:</label>
+                <select name="myCar" id="Car">
+                    <option value="Civic">Civic</option>
+                    <option value="corola">Corola</option>
+                </select>
+
+            </div>
+            <div><br></div>
+            <div>
+                When you fill then:<input type="submit" value="Submit Now">
+                Otherwise: <input type="reset" value="Reset ">
+            </div>
+
+        </form>
+
+
+</body>
+
+</html>

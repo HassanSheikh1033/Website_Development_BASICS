@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0 ;
+        }
+        body{
+            background-color: rgb(163, 101, 25);
+        }
+        .container{
+            background-color: rgb(168, 140, 106);
+            border: 5px solid rgb(80, 14, 14);
+
+    /* We can set Padding/Margin top,bottom,left,right, like this  */
+
+            /* padding: 11px; 
+            padding-top: 11px;
+            padding-left: 11px;
+            padding-bottom: 11px; */
+             
+            /* margin-top: 4px;
+            margin-bottom: 2px;
+            margin-left: 7px;
+            margin-right: 4px;
+             */
+          
+            /* {Padding/Margin = Top Right Bottom Left}  
+               padding : 23px 56px 7px 72px ;  */
+
+          /* {padding/Margin: Y(Top/Bottom) X(Left/Right)}; */
+             padding:23px 45px ;
+              margin: 24px 510px;       /* Width will change if Margin/Padding change but it does not change if we use box sizing */ 
+              border-radius: 23px;
+              width: 744px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h3> This is a heading</h3>
+        <p id="first">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa excepturi dolores, non vero 
+        cupiditate et tempore adipisci, soluta laboriosam repellendus quisquam, sint inventore quas delectus nisi
+        quibusdam facere aspernatur!</p>
+    </div>
+
+
+    <div class="container">
+        <h3> This is a heading</h3>
+        <p id="second">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa excepturi dolores, non vero 
+        cupiditate et tempore adipisci, soluta laboriosam repellendus quisquam, sint inventore quas delectus nisi
+        quibusdam facere aspernatur!</p>
+    </div>
+
+    <div class="container">
+        <h3> This is a heading</h3>
+        <p id="third">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa excepturi dolores, non vero 
+        cupiditate et tempore adipisci, soluta laboriosam repellendus quisquam, sint inventore quas delectus nisi
+        quibusdam facere aspernatur!</p>
+    </div>
+    
+</body>
+</html>

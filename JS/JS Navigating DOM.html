@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigating Dom</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Services</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <div class="container">
+        <H1>Another Container</H1>
+    </div>
+
+    <script>
+        // IN HTML Calling 
+        let main = document.getElementById("main");
+        console.log(main);
+        let nav = document.getElementById("nav");
+        console.log(nav);
+
+        let container = document.getElementsByClassName("container")
+        console.log(container);
+
+        // In CSS Calling 
+        let sel = document.querySelector('.container');
+        console.log("Selector Return" , sel);
+
+        let sel1 = document.querySelectorAll('#nav>li');
+        console.log("Selector Return" , sel1);
+
+
+
+
+
+    </script>
+
+</body>
+</html>

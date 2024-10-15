@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope of VAR,Let,CONST</title>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li class="item1">item </li>
+            <li class="item2">item</li>
+            <li class="item3"></li>
+            <li class="item4"></li>
+            <li class="item5"></li>
+            <li class="item6"></li>
+            <li class="item7"></li>
+        </ul>
+    </div>
+
+
+    <script>
+
+        // SCOPE OF VARIABLE 
+
+        // 1: Global scope
+        var globalVar = "I'm a global var";
+
+        function exampleFunction() {
+            // 2: Function scope
+            var localVar = "I'm a local var";
+
+            console.log(globalVar); // Accessible
+            console.log(localVar); // Accessible
+        }
+
+        console.log(globalVar); // Accessible
+        console.log(localVar); // Not accessible, will result in an error
+
+        //  Example 
+        var string1 = 'This is a string';
+        var string1 = 'This is a string2';
+        console.log(string1);
+
+
+
+
+
+        // Scope of let
+
+        // Example by using function 
+        function exampleFunction() {
+            if (true) {
+                // Block scope
+                let localVar1 = "I'm a block-scoped variable";
+                console.log(localVar1); // Accessible within the block
+            }
+
+            // Not accessible outside the block
+            console.log(localVar1); // ReferenceError: localVar is not defined
+        }
+
+        // Simple Example
+
+        let a = 'u'
+        {
+            let a = 'u6'
+            console.log(a);
+        }
+        console.log(a);
+
+
+
+
+        // Constant 
+        const a1 = "This cannot be changed";
+        console.log(a1);
+
+        // SCOPE OF CONSTANT 
+        function exampleFunction() {
+            if (true) {
+                // Block scope
+                const localConst = "I'm a block-scoped constant";
+                console.log(localConst); // Accessible within the block
+            }
+
+            // Not accessible outside the block
+            console.log(localConst); // ReferenceError: localConst is not defined
+
+            // However, the scope behavior of const is the same as that of let.
+            // They are both block - scoped, but const variables have the added
+            //  constraint of immutability for their values.
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

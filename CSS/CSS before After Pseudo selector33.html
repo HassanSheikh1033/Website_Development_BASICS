@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after peaudo selector</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;            
+            color: rgb(255, 255, 255);
+            background-color: black;
+            
+        }
+        header::before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url(1.jpg)
+             no-repeat center center/cover;
+             z-index: -1;
+             opacity: 0.5;
+
+        }
+        .navigation{
+           font-size: 20px;
+            display: flex;
+
+        }
+        li{
+            padding: 20px 23px;
+            list-style: none;
+
+        }
+        h3{
+            font-size: 4rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+        }
+        p{
+            text-align: center;
+            
+        }
+        
+        section{
+            height: 454px;
+            margin: 3px 223px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            /* border: 6px solid rebeccapurple; */
+            justify-content: center;
+
+
+        }
+        section::before{
+            content: This is a content;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+
+         <ul class="navigation">
+            <li class="item">Home</li>
+            <li class="item">About Us</li>
+            <li class="item">ContactUs</li>
+            <li class="item">Services</li>
+        </ul>
+           
+        </nav>
+
+    </header>
+     <section>
+        <h3>Welcome to Coding World</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+             Maiores animi voluptatem dolore impedit neque unde obcae
+             cati fugit placeat, quis modi totam, repellat, ipsum rep
+            rehenderit sed exercitationem error dignissimos beatae non!
+        </p>
+
+     </section>
+     
+
+
+    
+</body>
+</html>

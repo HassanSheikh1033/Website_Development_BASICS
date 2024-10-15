@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>----JSON----</title>
+</head>
+<body>
+    <div class="container">  <h1>This is JSON Tutorail </h1>    </div>
+    <script>
+
+
+        //   JSON => JavaScript Oject Orientated Naviation ....
+       let jsonobj={
+        name: "Hassan",
+        Class : "1st Semester" ,
+        Profession : "Coding" ,
+        Lifeline : "Not Decided",
+        channel : "CWH" ,    
+        Friend : "Rohal"
+       }
+       console.log(jsonobj);
+       let myJsonStr = JSON.stringify(jsonobj);
+       console.log(myJsonStr);
+
+       myJsonStr =myJsonStr.replace("Hassan" , "Huzaifa");
+       console.log(myJsonStr);
+
+       newJsonObj = JSON.parse(myJsonStr);
+       console.log(newJsonObj);
+
+
+
+    </script>
+</body>
+</html>
